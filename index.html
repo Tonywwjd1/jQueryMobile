@@ -1,39 +1,222 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile: Theme Download</title>
-	<link rel="stylesheet" href="themes/tony.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
-	<div data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-			<h1>It Worked!</h1>
-		</div>
-		<div data-role="content" data-theme="a">
-			<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
-			<pre>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/tony.min.css&quot; /&gt;</strong>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/jquery.mobile.icons.min.css&quot; /&gt;</strong>
-&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css&quot; /&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js&quot;&gt;&lt;/script&gt;
-			</pre>
-			<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
-			<label for="slider1">Input slider:</label>
-			<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
-			<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
-			<legend>Cache settings:</legend>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
-			<label for="radio-choice-a1">On</label>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
-			<label for="radio-choice-b1">Off</label>
-			</fieldset>
-		</div>
-	</div>
-</body>
+  <head>
+    <link rel="stylesheet" href="themes/tony.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Portfolio</title>
+    </head>
+    <body>
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1 class="google">Welcome!</h1>
+  </div>
+  <div class="ui-content" align="center">
+    <h1 class="google">My name is Anthony Santacruz </h1>
+    <p class="google">And this is my simple portfolio page.</p>
+  </div>
+  <div data-role="footer">
+    <div data-role="navbar">
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4 class="google">&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+<div data-role="page" id="work">
+  <div data-role="header">
+    <h1>My Work</h1>
+  </div>
+  <div class="ui-content">
+    <h4 align="center">Just a couple of projects i have done.</h4>
+     <p>
+      <div class="ui-grid-b">
+      
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a" style="height:60px"><a href="#Website1">Website Reconstruction</a></div>
+        </div>
+      
+        <div class="ui-block-b">
+          <div class="ui-bar ui-bar-a" style="height:60px"><a href="#hiphop">Hiphopdancemiami</a></div>
+        </div>
+      
+        <div class="ui-block-c">
+          <div class="ui-bar ui-bar-a" style="height:60px"><a href="#soccer">Soccer Stalkers</a></div>
+        </div>
+      </div>
+      <!-- /grid-b -->
+    </p>
+</div>
+<h2 align="center">Skills</h2>
+    <ul data-role="listview" data-inset="true" data-filter="true">
+      <li data-role="list-divider">Languages</li>
+      <li>
+        <a href="#html"><img src="http://red-team-design.com/wp-content/uploads/2011/01/css3-html5-logo-initial.png">HTML</a>
+      </li>
+      <li>
+        <a href="#"><img src="http://php.quicoto.com/wp-content/uploads/2013/06/css3.jpg">CSS</a>
+      </li>
+      <li>
+        <a href="#"><img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" />Javascript</a>
+        <li data-role="list-divider">Frameworks</li>
+        <li><a href="#"><img src="http://big.info/wp-content/uploads/2013/03/80508321d8ce3ba8aa264380bb7eba33.png" />jQuery Mobile</a></li>
+        <li><a href="#"><img src="http://brandonquintanaconsulting.com/img/services/foundation.png" />Zurb Foundation</a></li>
+        <li><a href="#"><img src="http://getbootstrap.com/apple-touch-icon.png" />Bootstrap</a></li>
+        <li data-role="list-divider">Programs</li>
+        <li><a href="#"><img src="http://findicons.com/files/icons/2461/spiffy/256/adobe_dreamweaver.png" />Dreamweaver</a>
+          <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/256/github.png" />GitHub</a>
+            <li><a href="#"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-social-media/256/wordpress-icon.png" />Wordpress</a>
+              <li><a href="#"><img src="http://fc00.deviantart.net/fs70/i/2012/233/4/8/adobe_photoshop_dock_icon_by_deadmelkor-d5byfzl.png" />Photoshop</a>
+                <li><a href="#"><img src="http://www.veryicon.com/icon/png/Application/Windows%20Icons%20V2%20programs/illustrator.png" />Illustrator</a>
+                  <!-- ADD SOFTWARE DIVIDER -->
+    </ul>
+  <div data-role="footer">
+    <div data-role="navbar">
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4>&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+
+<div data-role="page" id="Website1">
+  <div data-role="header">
+    <h1>Website Reconstruction</h1>
+  </div>
+  <div class="ui-content" align="center">
+    <a href="#popupReconstruct" data-rel="popup" data-position-to="window" data-transition="fade" title="website reconstruction by Anthony Santacruz, on Flickr"><img class="popphoto" src="https://c1.staticflickr.com/9/8651/16383776771_4331c9fec2_z.jpg" width="434" height="640" alt="website reconstruction"></a>
+    
+  </div>
+
+
+    <div data-role="footer">
+    <div data-role="navbar">
+      
+
+  
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4>&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+  
+<div data-role="page" id="hiphop">
+  <div data-role="header">
+    <h1>Hiphopdancemiami.com</h1>
+  </div>
+  <div class="ui-content" align="center">
+    <a href="https://www.flickr.com/photos/130873597@N06/17819269146" title="hiphopdancemiami by Anthony Santacruz, on Flickr"><img src="https://c4.staticflickr.com/8/7680/17819269146_f5c5c93075_z.jpg" width="640" height="408" alt="hiphopdancemiami"></a>
+    
+  </div>
+
+
+    <div data-role="footer">
+    <div data-role="navbar">
+      
+
+  
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4>&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+
+<div data-role="page" id="soccer">
+  <div data-role="header">
+    <h1>SoccerStalkers.net</h1>
+  </div>
+  <div class="ui-content" align="center">
+    <a href="https://www.flickr.com/photos/130873597@N06/16384599372" title="SoccerStalkers.net by Anthony Santacruz, on Flickr"><img src="https://c1.staticflickr.com/9/8581/16384599372_81e210cc9c_z.jpg" width="640" height="324" alt="SoccerStalkers.net"></a>
+    
+  </div>
+
+
+    <div data-role="footer">
+    <div data-role="navbar">
+      
+
+  
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4>&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact Me:</h1>
+  </div>
+  <div class="ui-content" align="center">
+    <h3>Cell</h3>
+    <p>305-763-5942</p>
+    <h3>Instagram</h3>
+    <p>tonehh_atw</p>
+    <h3>Facebook</h3>
+    <p>Search: Anthony Tony Santacruz</p>
+  </div>
+
+  <div data-role="footer">
+    <div data-role="navbar">
+
+      <ul>
+
+        <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+
+        <li><a href="#work" data-icon="camera">Work</a></li>
+
+        <li><a href="#contact" data-icon="phone">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+    <h4>&copy; MIUWEB 2015</h4>
+  </div>
+</div>
+    </body>
+  </head>
 </html>
